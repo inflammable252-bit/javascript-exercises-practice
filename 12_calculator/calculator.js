@@ -18,7 +18,6 @@ const power = function (a, b) {
 }
 
 const factorial = function (number) {
-    if (number == 0) return 1;
     let total = 1;
     for (i = number; i >= 1; i--) {
         total = total * i;
