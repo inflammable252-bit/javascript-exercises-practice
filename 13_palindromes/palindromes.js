@@ -1,13 +1,12 @@
 palindromes = function (input) {
 inputArray = input.toLowerCase().split("");
-filterItems = ["!", ".", ",", " "]
+filterItems = ["!", ".", " ", ","]
 
 function applyFilter(array) {
     for (const fItem of filterItems) {
     for (i=0; i<array.length; i++) {
             if (array[i] == fItem) {
                 inputArray.splice(i, 1);
-                i++;
             }
         }
     }
