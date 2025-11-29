@@ -1,5 +1,5 @@
 function findTheOldest(dataset) {
-currentYear = 2025,
+currentYear = new Date().getFullYear()
 
 age = (item) => {return Math.abs((item.yearOfDeath || currentYear) - item.yearOfBirth);
     }
